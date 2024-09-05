@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentController {
-    private List<Student> students;
+
 
     public StudentController() {
         students = new ArrayList<>();
@@ -18,12 +18,5 @@ public class StudentController {
         return students;
     }
 
-    public Student getStudentById(int id) {
-        for (Student student : students) {
-            if (student.getId() == id) {
-                return student;
-            }
-        }
-        return null;
-    }
+
 }
